@@ -27,5 +27,15 @@ public class Cuenta {
         System.out.println("Su saldo actual es: "+this.saldoDeCuenta);
     }
 
+    public long getNumeroDeCuenta() {
+        return numeroDeCuenta;
+    }
 
+    public void agregarNuevoSaldo(double agregar){
+        this.saldoDeCuenta+=agregar;
+    }
+    public boolean validarMonto(double monto){
+      if(monto<=this.saldoDeCuenta) return true;
+      else return false;
+    };
 }
